@@ -26,7 +26,7 @@ import urllib.parse
 from http.client import HTTPConnection, HTTPSConnection
 
 from impacket import LOG
-from lib.relay.servers.socksserver import SocksRelay
+from ghostsurf.relay.servers.socksserver import SocksRelay
 
 # Besides using this base class you need to define one global variable when
 # writing a plugin:

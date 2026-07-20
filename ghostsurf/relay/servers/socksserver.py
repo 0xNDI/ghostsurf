@@ -519,7 +519,7 @@ class SOCKS(socketserver.ThreadingMixIn, socketserver.TCPServer):
         socketserver.TCPServer.__init__(self, server_address, handler_class)
 
         # Let's register the socksplugins plugins we have
-        from lib.relay.servers.socksplugins import SOCKS_RELAYS
+        from ghostsurf.relay.servers.socksplugins import SOCKS_RELAYS
 
         for relay in SOCKS_RELAYS:
             LOG.info('%s loaded..' % relay.PLUGIN_NAME)

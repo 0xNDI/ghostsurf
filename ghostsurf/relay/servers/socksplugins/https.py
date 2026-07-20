@@ -18,8 +18,8 @@
 #   senderend - inherits kernel-mode auth workaround from http.py, thread-safe socket locking for browser req serialization
 #
 from impacket import LOG
-from lib.relay.servers.socksplugins.http import HTTPSocksRelay
-from lib.relay.utils.ssl import SSLServerMixin
+from ghostsurf.relay.servers.socksplugins.http import HTTPSocksRelay
+from ghostsurf.relay.utils.ssl import SSLServerMixin
 from OpenSSL import SSL
 
 # Besides using this base class you need to define one global variable when

@@ -1,11 +1,16 @@
 # Virtual environment
 venv/
+.venv/
 
-# Python
+# Python / uv
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+*.egg-info/
+dist/
+build/
+uv.lock
 
 # IDE
 .vscode/
