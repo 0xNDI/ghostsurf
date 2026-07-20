@@ -9,6 +9,9 @@
 # Features kernel-mode auth workaround for IIS/HTTP.sys targets
 #
 
+import warnings
+warnings.filterwarnings("ignore", message="'return' in a 'finally' block")
+
 import argparse
 import sys
 import logging
